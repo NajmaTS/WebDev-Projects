@@ -1,0 +1,82 @@
+/* GALLERY JOIN */
+
+.container{
+    margin: 30px auto;
+    width: auto;
+    text-align: center;
+}
+.galleryjoin .upload{
+    border: 1px solid rgba( 255,255,255, 0.5);
+    /*MAKES THE TOP AND LEFT SHINE*/
+    border-bottom: 0.8px solid rgba( 255,255,255, 0.2);
+    border-right: 0.8px solid rgba( 255,255,255, 0.2);
+    border-radius: 10px;
+    background: aliceblue ;
+    /*DOESNT LET THE BOX GET SMALLER*/
+    max-width: 500px;
+    min-height: 400px;
+    /*BRINGS BOX TO FRONT*/
+    overflow:hidden;
+    box-shadow: 0 20px 30px rgba( 66,1,97, 0.3);
+    margin: auto;
+    backdrop-filter: blur(5px);
+    display: grid;
+   justify-items: center;
+}
+
+.galleryjoin{
+    padding: 100px;
+    height: 100svh;
+    /* display: ;
+    flex-direction: column;
+    align-items: center; */
+    background-color: aliceblue;
+    text-align: center;
+    
+
+}
+.galleryjoin h2{
+    font-size: 3em;
+    text-align: center;
+    margin: 40px auto;
+    color: #420161;
+    max-width: 500px;
+    font-family: poppins;
+    font-weight: bolder;
+   
+}
+.galleryjoin a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1em;
+}
+
+.galleryjoin button{
+    background-color: rgb(66, 1, 97);
+    width: 50%;
+    border-radius: 20px;
+
+}
+
+.galleryjoin p{
+    color: #420161;
+}
+
+.upload{
+    text-align: center;
+    
+}
+
+.ctrl{
+    font-family: poppinsl;
+    border: solid 1px ;
+    padding: 0 4px;
+    color: #420161;
+}
+
+.comingsoon{
+    color: aliceblue;
+    font-size: 3em;
+}
+
+
