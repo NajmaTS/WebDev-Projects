@@ -44,6 +44,7 @@ header{
     background-color: #420161;
     /* border: solid white; */  
     z-index: 1;
+    width: 100dvw;
 }
 
 
@@ -97,7 +98,7 @@ section{
     position: relative;
     background-repeat: no-repeat;
     height: 100%;
-    width: 100%;
+    width: 100dvw;
     background-color: #420161;
     margin:0;
     padding: 200px;
@@ -514,7 +515,7 @@ img{
     margin: auto;
  }
 
- .idk  button:hover{
+ .idk button:hover{
    background-color: #c7f1f7;
  }
 
@@ -533,6 +534,7 @@ img{
     color: aliceblue;
     text-align: center;
     padding: 20px;
+    width: 100dvw;
  }
 
  footer h2{

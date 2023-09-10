@@ -1,10 +1,27 @@
 /* GALLERY JOIN */
+*{
+ margin: 0;
+ box-sizing: border-box;
+ padding: 0;
+}
 
-.container{
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Regular.otf);
+}
+
+@font-face {
+    font-family: PoppinsL;
+    src: url(Poppins-Light.otf);
+}
+
+/* .container{
     margin: 30px auto;
     width: auto;
+    height: 100%;
     text-align: center;
-}
+} */
+
 .galleryjoin .upload{
     border: 1px solid rgba( 255,255,255, 0.5);
     /*MAKES THE TOP AND LEFT SHINE*/
@@ -13,27 +30,26 @@
     border-radius: 10px;
     background: aliceblue ;
     /*DOESNT LET THE BOX GET SMALLER*/
-    max-width: 500px;
-    min-height: 400px;
+    width: 21rem;
+    min-height: 30rem;
     /*BRINGS BOX TO FRONT*/
     overflow:hidden;
     box-shadow: 0 20px 30px rgba( 66,1,97, 0.3);
     margin: auto;
-    backdrop-filter: blur(5px);
+    text-align: center;
     display: grid;
    justify-items: center;
+   align-items: center;
 }
 
 .galleryjoin{
     padding: 100px;
-    height: 100svh;
+    height: 100%;
     /* display: ;
     flex-direction: column;
     align-items: center; */
     background-color: aliceblue;
     text-align: center;
-    
-
 }
 .galleryjoin h2{
     font-size: 3em;
@@ -55,7 +71,7 @@
     background-color: rgb(66, 1, 97);
     width: 50%;
     border-radius: 20px;
-
+    margin: 0, auto;
 }
 
 .galleryjoin p{
@@ -80,3 +96,204 @@
 }
 
 
+label,
+input,
+select{
+    font-family: Poppinsl;
+    margin: 1.5rem, auto;
+    color: #420161;
+    text-align: center;
+}
+
+#category{
+    width: 12rem;
+    border-radius: 15px;
+    padding: 0.6rem;
+    border: none;
+    color: aliceblue;
+    background-color: #420161;
+}
+
+
+form{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 0rem;
+    /* border: solid; */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.mybutton{
+    font-family: poppinsl;
+    color: aliceblue;
+}
+
+.upload img{
+    filter: drop-shadow( 2px 2px 5px rgba(67, 1, 97, 0.2)); 
+}
+
+textarea{
+    height: 5rem;
+    border: none;
+    box-shadow:  2px 2px 5px rgba(67, 1, 97, 0.2);
+    border-radius: 10px;
+    font-family: poppinsl;
+}
+
+/* MAIN GALLERY */
+
+.gallerylanding{
+    isolation: isolate;
+    position: relative;
+    z-index: 1;
+    height: 100dvh;
+    text-align: center;
+
+}
+
+.gallerylanding::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/google-deepmind-mDPMZYyQuIQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -2;
+}
+
+.galleryheader{
+    height: 3em;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.galleryheader p{
+    font-family: azonix;
+    color: aliceblue;
+    opacity: 1;
+    font-size: 1.7rem;
+}
+
+.galleryheader a{
+    font-family: poppinsl;
+    font-size: 0.9rem;
+    color:  #c7f1f7;
+    /* opacity: 0.7; */
+}
+
+.gallerylanding a{
+    text-decoration: none;
+    font-family: poppinsl;
+    font-size: 1rem;
+    /* font-weight: 900; */
+}
+
+.gallerylanding button{
+    width: 15em;
+    height: 3.6em;
+    border-radius: 25px;
+}
+
+.gallerylanding h1{
+    font-size: 3rem;
+    color: aliceblue;
+    font-family: poppins;
+    font-weight: 700;
+    margin: 1rem auto;
+}
+
+
+.collections{
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+.collectionswrapper,
+.wrapper{
+    margin:  auto;
+}
+
+.collectionswrapper{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 4em; */
+    margin: 0 auto;
+    width: 80%;
+}
+
+.collection{
+    border: 1px solid rgba( 255,255,255, 0.5);
+    /*MAKES THE TOP AND LEFT SHINE*/
+    border-bottom: 0.8px solid rgba( 255,255,255, 0.2);
+    border-right: 0.8px solid rgba( 255,255,255, 0.2);
+    border-radius: 10px;
+    background: rgba( 255,255,255, 0.1) ;
+    box-shadow: 0 25px 45px rgba( 0,0,0, 0.1);
+    padding:15px;
+    backdrop-filter: blur(7px);
+    color: rgb(240, 248, 255);
+    min-width: 20em;
+    height: 27em;
+    /* display: grid; */
+}
+
+.collection h3,
+.collection h4{
+    font-family: poppinsl;
+}
+.collection img{
+   height: 65%;
+   width: 100%;
+   object-fit: cover;
+   margin: 1em auto;
+   border-radius: 10px;
+
+}
+
+.collection hr{
+    color: white;
+    opacity: 0.6;
+}
+
+.welcome{
+    display: flex;
+    padding: 0; 
+    height: 60dvh; 
+}
+.welcome img{
+    width: 50dvw;
+    right: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+.welcometext{
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    background-color: #5d1477 ;
+    padding: 2em ;
+}
+
+.welcometext h2,
+.welcometext p{
+    margin: 0 auto;
+}
+
+.welcome h2{
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: poppins;
+    font-weight: 700;
+    margin: 1rem auto;
+}

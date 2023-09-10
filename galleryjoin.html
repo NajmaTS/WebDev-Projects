@@ -13,38 +13,37 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="form.html">Sign Up</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="galleryjoin.html">Register</a></li>
             <li><a href="">Email</a></li>
           </ul>
     </header>
 
     <section class="galleryjoin">
-      <div class="container">
         <h2>Upload an image to join our gallery!</h2>
         <div class="upload">
-            <img src="ICONS/icons8-collectibles-60-2.png" alt="">
+            <form action="">
+            <img src="ICONS/icons8-collectibles-100.png" alt="">
 
-              <button><a href="#">Upload Image</a></button>
-               <p>or drop a file</p>
-               <br>
-               <p>Paste an image or <span class="url1">URL</span> <span class="ctrl">ctrl</span>+ <span class="ctrl">v</span></p>
-                <form action="" method="upload">
+              <button class="mybutton" ><a href="#"></a>Upload Image</button>
+               <!-- <p>or drop a file</p> -->
+               <!-- <br> -->
+               <!-- <p>Paste an image or <span class="url1">URL</span> <span class="ctrl">ctrl</span>+ <span class="ctrl">v</span></p> -->
                <select name="category" id="category">
-                   <option value=""> Vaporwave</option>
-                   <option value=""> Holographic</option>
-                   <option value=""> Cyperpunk</option>
-                   <option value=""> Digital</option>
-                   <option value=""> 3D</option>
+                   <option value="" > Pick a Category</option>
+                   <option value="vaporwave"> Vaporwave</option>
+                   <option value="holographic"> Holographic</option>
+                   <option value="cyberpunk"> Cyperpunk</option>
+                   <option value="digital"> Digital</option>
+                   <option value="3d art"> 3D</option>
             </select>
-            <br>
-            <br>
-            <label for="file"> Choose a picture</label>
-            <input type="file" id="file">
-        </form>
+            <label for="file"> Choose a Picture:</label>
+            <input type="file" id="file" accept="image/*" >
+            <label for="description">Tell Us about your Piece:</label>
+            <textarea name="" id="" ></textarea>
+            </form>
         </div>
 
-      </div>
     </section>
 
 </body>
